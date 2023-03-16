@@ -29,3 +29,7 @@
       float:left;
     text-align: center;
 }
+.centerHead{
+  text-align: center;
+  font-size: 35px;
+}

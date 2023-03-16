@@ -11,24 +11,53 @@
   href="https://fonts.googleapis.com/css?family=Lobster">
   <title>Homepage</title>
   <!--Benjamin Peterson, CTI110-0003--->
+  <body style="background-color:rgb(221, 214, 214);"></body>
 </head>
+<style>
+.myPictures {display:none;}
+</style>
 <body>
     <div class="header">
         <a class="title" href="index.html"><!--placeholder--></a>
         <div class="navbar">
-            <a href="index.html">Homepage</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact Info</a>
+          <a href="index.html">Homepage</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact Info</a>
         </div>
     </div>
-    <h1>Projects</h1>
-	<img src="https://tse3.mm.bing.net/th?id=OIP.mDzIoaqnw_whAiaTSz4iwgHaFj&pid=Api&P=0" alt="Placeholder Image">
-	
-	  <footer>
-          <p>Questions? Visit the <a href="about.html">about</a> section for more information</p>
-      </footer>
-</body>
+    <br/><br/><br/>
+<h2 class="centerHead">Snippets of my Projects</h2>
 
-<!--This file is my own work and I typed everything, Benjamin Peterson-->
+<div class="w3-content w3-display-container">
+  <img class="myPictures" src="https://tse3.mm.bing.net/th?id=OIP.roeJGz3eeyhxK3XRQ0LxpQHaFj&pid=Api&P=0" style="width:100%">
+  <img class="myPictures" src="https://tse1.mm.bing.net/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&pid=Api&P=0" style="width:100%">
+  <img class="myPictures" src="https://tse1.mm.bing.net/th?id=OIP.kGmuLIMjc1TVVqyC43yAZgHaEK&pid=Api&P=0" style="width:100%">
+  <img class="myPictures" src="https://tse4.mm.bing.net/th?id=OIP.i-Xdb3eu9ihga0frrt1tWQHaEo&pid=Api&P=0" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("myPictures");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>
