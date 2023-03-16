@@ -1,0 +1,31 @@
+.navbar {
+	overflow: hidden;
+	width: 65%;
+
+}
+.navbar a {
+	color: #ffffff;
+	border-bottom: solid 2px #ff0c0c;
+	text-decoration: none;
+	font-size: 15px;
+  float: left;
+  padding: 12px;
+  text-align: center;
+  width: 16.66%; 
+}
+.header {
+	background-color: #000000;
+  position: fixed;
+		z-index: 3;
+  width: 100%;
+  top:0;
+}
+.footer {
+    background-color: #555fd3;
+      color: white;
+    padding: 30px;
+    bottom:0;
+      width: 100%;
+      float:left;
+    text-align: center;
+}
