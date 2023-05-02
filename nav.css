@@ -90,7 +90,7 @@
 * {box-sizing: border-box}
 body {
 	margin: 0;
-	background-color: #494949;
+	background-color: #b4b4b4;
 	color: black;
   font-family: 'Nunito', sans-serif;
 }
@@ -148,10 +148,18 @@ a {
 	font-family: 'Nunito', sans-serif;
 	color: black;
 }
-  div.smallBlue{
-  width: 2px;
-  height: 2px;
+  .centerItems{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
   .centerText{
-  text-align: center;
+    text-align: center;
+  }
+  .centerLogos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
