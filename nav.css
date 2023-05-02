@@ -148,11 +148,10 @@ a {
 	font-family: 'Nunito', sans-serif;
 	color: black;
 }
-img.smallBlue{
-  width: 10px;
-  height: 10px;
-  align-items: left;
+  div.smallBlue{
+  width: 2px;
+  height: 2px;
 }
-p.centerText{
+  .centerText{
   text-align: center;
 }
